@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "roboto", sans-serif;
+    background-color: rgb(113, 179, 209);
+}
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+}
+.formulario__label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.formulario__grupo-input{
+    position: relative;
+
+
+}
+
+.formulario__grupo-terminos,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar{
+    grid-column: span 2;
+
+
+}
+main{
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+
+}
