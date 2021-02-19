@@ -1,6 +1,6 @@
 $(document).on('ready',function (){
  		
-		$.getJSON("https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json", function(data) {
+		$.getJSON('https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json', function(data) {
 			$.each(data, function(key, value) {
 				$("#usuarios").append('<option name="' + key + '">' + value + '</option>');
 			}); // close each()
