@@ -12,8 +12,9 @@ $(document).on('ready',function (){
 			 let dptoid = $("#departamento").val();
 			 console.log(dptoid);
 			 $.getJSON('https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json', function(data) {
-				 let ciudades = data[dptoid];
-				 console.log(ciudades);
+				 let cdd = data[dptoid].ciudades;
+				 console.log(cdd);
+				 
 			 });
 		 });
 	});
