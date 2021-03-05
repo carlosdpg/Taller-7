@@ -9,7 +9,11 @@ $(document).on('ready',function (){
 		});
 
 		$("#departamento").on("change", function(){
-			 let dpto = $("#departamento").val();
-			 console.log(dpto);
+			 let dptoid = $("#departamento").val();
+			 console.log(dptoid);
+			 $.getJSON('https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json', function(data) {
+				 let ciudades = data[dptoid];
+				 console.log(ciudades);
+			 });
 		 });
 	});
