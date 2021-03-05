@@ -4,7 +4,6 @@ $(document).on('ready',function (){
 			$.each(data, function(id, dpto) {
 				$("#departamento").append('<option value="' + id + '">' + dpto.departamento + '</option>');
 				let ciudades = dpto.ciudades;
-				console.log(ciudades.length);
 				$("#ciudad").append('<option name="' + dpto.id + "" + id + '">' + ciudades[id] + '</option>');
 			});
 		});
