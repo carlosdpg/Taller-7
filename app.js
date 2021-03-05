@@ -8,10 +8,10 @@ $(document).on('ready',function (){
 		});
 
 		$("#departamento").on("change", function(){
+			$("departamento").empty();
 			 let dptoid = $("#departamento").val();
 			 $.getJSON('https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json', function(data) {
 				 let cdd = data[dptoid].ciudades;
-				 console.log(cdd.length);
 				 for (let i = 0; i < cdd.length; i++) {
 					 $("#ciudad").append('<option value="' + i + '">' + cdd[i] + '</option>');
 					 console.log(cdd[i]);
