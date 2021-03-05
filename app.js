@@ -11,10 +11,10 @@ $(document).on('ready',function (){
 			 let dptoid = $("#departamento").val();
 			 $.getJSON('https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json', function(data) {
 				 let cdd = data[dptoid].ciudades;
-				 console.log(cdd);
-				 $.each(cdd,function(id) {
-					 $("#ciudad").append('<option value="' + id + '">' + id + '</option>');
-				 });
+				 for (let i = 0; i < cdd.lenght; i++) {
+					 $("#ciudad").append('<option value="' + i + '">' + cdd[i] + '</option>');
+					 console.log(cdd[i]);
+				 };
 			 });
 		 });
 	});
