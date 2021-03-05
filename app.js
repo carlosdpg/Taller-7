@@ -9,7 +9,7 @@ $(document).on('ready',function (){
 		});
 
 		$("#departamento").on("change", function(){
-			 let dpto = $("#departamento").value;
+			 let dpto = $("#departamento").val();
 			 console.log(dpto);
 		 });
 	});
