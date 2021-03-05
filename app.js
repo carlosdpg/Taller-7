@@ -9,7 +9,7 @@ $(document).on('ready',function (){
 
 		$("#departamento").on("change", function(){
 			 let dptoid = $("#departamento").val();
-			 $("ciudad").empty();
+			 $("#ciudad").empty();
 			 $.getJSON('https://raw.githubusercontent.com/marcovega/colombia-json/master/colombia.min.json', function(data) {
 				 let cdd = data[dptoid].ciudades;
 				 for (let i = 0; i < cdd.length; i++) {
