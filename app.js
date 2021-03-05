@@ -4,7 +4,7 @@ $(document).on('ready',function (){
 			$.each(data, function(id, dpto, cdd) {
 				console.log(cdd);
 				$("#departamento").append('<option name="' + id + '">' + dpto.departamento + '</option>');
-				$("#ciudad").append('<option name="' + dpto.id + "" + id + '">' + cdd + '</option>');
+				$("#ciudad").append('<option name="' + dpto.id + "" + id + '">' + dpto.ciudades + '</option>');
 			});
 		});
 
